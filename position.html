@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+body{
+    height: 4444px;
+    border: 2px solid black;
+}
+header{
+    position: sticky;
+    z-index: 1;/* elements having more z-index will appears first or in front */
+
+}
+        nav {
+            background-color: black;
+            color: white;
+            padding-left: 23px;
+            font-size: 22px;
+            line-height: 1.9;
+        }
+
+        li {
+            display: inline-block;
+            padding-left: 5px;
+        }
+
+        ul {
+            list-style: square /* inside  url("sqpurple.gif") */;
+        }
+
+        .box {
+            background-color: rgb(18, 247, 117);
+            height: 60vh;
+            width: 70vw;
+            margin: auto;
+            /* it will box in center because margin adjusts on both the sides */
+            padding: 0px;
+            padding-top: 0px;
+
+        }
+
+        .box>p {
+            border: 2px solid red;
+
+        }
+
+        .box-1 {
+            background-color: rgb(181, 53, 53);
+            width: 150px;
+            height: 150px;
+           /*  position: static; it is the default position and top/bottom/left/right & z-index has no effect */
+            /* position: relative; all the properties will work */
+
+                    /* try both lines of code for relative and absolute */
+
+             /* position: absolute; /* it will throw out the box from document flow[code in body] and it can set in anyway */ /* it will not be in div it will be in display */
+             right: 0; 
+        }
+
+        .box-1 p {
+            text-align: center;
+        }
+        .box-2{
+        /* position: absolute; */
+        background-color: rgb(24, 15, 15);
+        height: 150px;
+            width: 150px;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ea tempore ipsum dolorum, ad velit
+            repudiandae voluptatem alias sit, in cum voluptatum recusandae vitae. Hic, illo. Provident cupiditate
+            consectetur maiores!</p>
+        <div class="box-1">
+            <p>I am a paragraph</p>
+        </div>
+        <div class="box-2">
+            <p>hi </p>
+        </div>
+    </div>
+</body>
+
+</html>

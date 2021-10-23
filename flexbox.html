@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            padding: 0;
+            margin: 0;
+        } */
+        .container {
+            height: 80vh;
+            width: auto;
+            background-color: blueviolet;
+            display: flex;
+            flex-direction: row;
+            /* float: left; */
+            flex-wrap: wrap;
+            /*it wraps any item in any display size */
+            /* flex-wrap: wrap-reverse; wraps in reverse order */
+            justify-content: center;
+            /* to make in center horizontally */
+            align-items: center;
+            /* to make in center vertically */
+            /* align-content: center; */
+            /* to remove spaces when minimized and all contents in one entity[all together without space] */
+        }
+
+        .box {
+            background-color: chartreuse;
+            height: 150px;
+            width: 200px;
+            float: right;
+            /*box moves on left side*/
+            /* flex-grow: 3;  to change the size of box should remove the width */
+            flex-shrink: 0;
+        }
+
+        .box-1 {
+            background-color: cyan;
+            height: 150px;
+            width: 200px;
+            float: right;
+            /* box moves on right side */
+            clear: right;
+            /* used to clear the float property means no side-by-side box alignmet on the right side */
+            /* align-self: flex-start; to change the box position */
+
+
+        }
+
+        .box-2 {
+            order: 2;
+            /* changes position of box in order */
+
+        }
+
+        .box-4{
+           background-color: rgb(152, 31, 31);
+           width: 100px;
+           height: 100px;
+           padding-left: 10px;
+           margin-left: 15px;
+          
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+            <h3>box</h3>
+        </div>
+        <div class="box-1">
+            <h3>box-1</h3>
+        </div>
+        <div class="box">
+            <h3>box-2</h3>
+        </div>
+        <div class="box-1">
+            <h3>box-3 </h3>
+        </div>
+    </div>
+</body>
+
+</html>

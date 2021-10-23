@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            position: sticky;
+            background-color: black;
+            color: white;
+           padding: 10px;
+        }
+
+        ul {
+            list-style-type: upper-alpha;
+
+        }
+
+        li {
+            display: inline;
+            font-size: 2vw;
+            /* it will make the fonts responsive and the navbar too */
+            line-height: 2;
+            letter-spacing: 0.073em;
+            font-weight: 500;
+            font-style: normal;
+        }
+        .c{
+            height: 200vh;
+            background: burlywood;
+            position: relative; /* put this to work z-index */
+            z-index: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="c">
+
+    </div>
+</body>
+
+</html>

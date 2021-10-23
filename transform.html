@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        background: blueviolet;
+        height: 20vh;
+    }
+
+    .box {
+        border: 2px solid black;
+        display: inline-block;
+        transform: translate(24px, 10px) rotateX(70deg);
+        transform-origin: 0;
+        /* transform: scale(2,2); {X-axis}{Y-axis}*/
+        transform: scaleX(1);
+        transform: scaleY(1);
+        transform: skew(0deg, 1deg);
+        /* transition: all 0.5s ease-in-out; */
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .box:hover {
+        transform: translate(24px, 10px);
+        /*rotateX(30deg)*/
+        transform-origin: 0;
+        /* transform: scale(2,2); {X-axis}{Y-axis}*/
+        transform: scaleX(1);
+        transform: scaleY(1);
+        transform: skew(25deg, 0deg);
+        /* height: 200px; */
+
+    }
+
+    
+    img {
+        width: 250px;
+        /* height: 200px; */
+        transition-property: width;
+        transition-duration: 1.2s;
+        transition-timing-function: ease-in-out;
+        /* transition-delay: 2s; */
+        /* transition: width 1s ease-in-out 0.5s, height 1s ease-in-out; */
+    }
+
+    .tan img:hover {
+        width: 400px;
+        /* height: 300px; */
+    }
+
+    #btn {
+        color: white;
+        background: black;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut velit ratione atque quod, pariatur quia
+                maxime. Consectetur perspiciatis placeat ea neque itaque quidem quia unde, cum dicta. Eveniet nulla
+                fugit qui nihil tenetur esse!</p>
+        </div>
+    </div>
+    <div class="con">
+        <img id="im" src="./images/unity.jpg" alt="">
+        <button onclick="myfun()" id="btn">Bigger</button>
+
+    </div>
+    <div class="tan">
+        <img src="./images/chaudry.webp" alt="">
+    </div>
+
+</body>
+<script>
+    im.style.width = '250px'
+
+    btn.addEventListener("click", () => {
+
+        const style = document.getElementById('btn')
+
+        if (im.style.width === '250px') {
+            im.style.width = '600px';
+            btn.style.backgroundColor = 'black'
+            btn.style.color = 'white'
+            // document.getElementById('btn').innerHTML = 'smaller'
+
+            // btn.style.innerHtml.transitionDelay = '3s'
+
+            setTimeout(() => {
+                document.getElementById('btn').innerHTML = 'smaller'
+            }, 1000);
+
+
+        } else if (im.style.width === '600px') {
+            im.style.width = '250px';
+            setTimeout(() => {
+
+                document.getElementById('btn').innerHTML = 'bigger';
+            }, 1000);
+        }
+    })
+
+
+
+</script>
+
+</html>

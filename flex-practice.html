@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #F0E5;
+        }
+
+        nav {
+            background: black;
+            color: white;
+            padding: 20px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            width: 71%;
+            justify-content: space-between;
+        }
+
+        li {
+            width: 100px;
+            /* display: inline; */
+            border-bottom: 2px solid white;
+            list-style: square inside;
+            padding-bottom: 5px;
+            text-align: center;
+
+        }
+
+        h2 {
+            /* font-size: 49px; */
+            line-height: 0;
+            /* letter-spacing: 0.502em; */
+            font-weight: 600;
+            height: 50px;
+            width: 100%;
+            margin-top: 42px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: black;
+            font-family: Georgia, sans-serif;
+            font-size: 5em;
+            letter-spacing: -2px;
+        }
+
+        .contai {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            margin-top: -17px;
+        }
+
+
+        .cot {
+            background-color: violet;
+            width: 30vw;
+            height: 50vh;
+            text-align: center;
+            padding: 20px;
+            padding-top: 5px;
+            overflow: scroll;
+            background-image: url("./images/shah.jpg");
+            background-size: cover;
+            background-position: center;
+            background-size: 170px auto;
+            background-repeat: no-repeat;
+        }
+        .cot::-webkit-scrollbar { display:none }
+
+        .cot::-webkit-scrollbar {
+            display: none;
+        }
+
+        h1 {
+            width: 120px;
+            margin: 10px auto;
+            text-align: center;
+            color: yellow;
+            border-bottom: 2px solid black;
+            align-content: center;
+        }
+
+        .tan {
+            background-color: tomato;
+            width: 30vw;
+            height: 50vh;
+            text-align: center;
+            padding: 20px;
+            padding-top: 5px;
+            overflow: scroll;
+            background-image: url("./images/modi.jpg");
+            background-size: cover;
+            background-position: center;
+            background-size: 170px auto;
+            background-repeat: no-repeat;
+        }
+
+        .tan::-webkit-scrollbar {
+            display: none;
+        }
+
+        p {
+            width: 100%;
+            background-color: tomato;
+        }
+
+        .bg {
+            width: 100%;
+            height: 61vh;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            margin-top: 70px;
+        }
+
+        .bg img {
+            position: relative;
+            box-shadow: 2px 3px 32px 23px rgba(0, 0, 0, 0.71);
+            width: 1200px;
+            height: 424px;
+
+        }
+
+
+        h3 {
+            position: absolute;
+            /* color: rgba(244, 242, 242, 0.84); */
+            line-height: 0.4;
+            font-weight: 800;
+            font-style: italic;
+            font-family: "Arial Black", sans-serif;
+            font-size: 4.5em;
+            letter-spacing: -1px;
+            /* background-color: black; */
+            color: white;
+            top: 580px;
+            right: 85px;
+            text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+            color: #FFFFFF;
+            /* background: #333333; */
+        }
+
+        .bg-main {
+            display: flex;
+            flex-direction: row;
+            height: 450px;
+            width: 100vw;
+            margin-top: 70px;
+            justify-content: space-around;
+        }
+
+        .bg-1 {
+            height: 450px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            color: blanchedalmond;
+            justify-content: center;
+        }
+
+        .bg-1 img {
+            height: 400px;
+            width: 350px;
+            margin-left: 20px;
+            box-shadow: 2px 3px 32px 23px rgba(0, 0, 0, 0.71);
+            border-radius: 40px;
+        }
+
+        h4 {
+            font-size: 40px;
+            margin-left: 23px;
+            line-height: 1.9;
+            color: #5b4d61;
+        }
+
+        h5 {
+            font-size: 48px;
+            line-height: 0.9;
+            letter-spacing: 0.16em;
+            font-weight: 600;
+            font-style: normal;
+            margin-left: 66px;
+            margin-top: 38px;
+            margin-bottom: -25px;
+            color: unset;
+        }
+
+        .logo-1 {
+            position: absolute;
+            top: 1119px;
+            right: 10px;
+        }
+
+        .logo-2 {
+            position: absolute;
+            top: 1094px;
+            right: 530px;
+        }
+
+        .logo-3 {
+            position: absolute;
+            top: 1101px;
+            left: 346px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <h2>ScammerS</h2>
+    <div class="contai">
+        <div class="cot">
+            <h1>2.Amit</h1>
+            <p style="background-color: violet;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quidem
+                quaerat ratione facilis expedita earum quasi ab magnam quam eligendi eius explicabo reprehenderit
+                blanditiis
+            </p style="margin-top:0px; margin-bottom:5px;">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+
+            <p style="background-color: violet;"> Nihil incidunt modi. Quaerat animi harum, enim ab eos ratione
+                class="lorem">Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Est, eos error laborum nostrum vel ratione rerum magni
+                quidem fugit, voluptate vitae praesentium tenetur quos? Nostrum libero quam mollitia facere earum! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Mollitia doloribus ipsa iure tempora facilis dolorem?
+                Veniam animi, provident recusandae cupiditate aut, reiciendis ad asperiores, maxime quaerat explicabo
+                culpa repellendus hic?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam dolorem
+                earum harum velit non possimus deserunt sit dignissimos, quas natus id quo sed, repudiandae, quidem in
+                sunt magnam rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur assumenda placeat
+                non praesentium rem magni voluptatem minus corporis, adipisci harum voluptates vitae quo, aperiam dolore
+                iusto molestias excepturi debitis odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                obcaecati doloribus nisi explicabo voluptatum reprehenderit voluptas molestiae numquam dolores, libero
+                magnam distinctio, vel ipsum fugit dolore repellendus dignissimos voluptate vero? </p>
+        </div>
+        <div class="tan">
+            <h1>1.Modi</h1>
+            <p style="background-color: tomato;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem sequi
+                voluptatibus laudantium voluptates
+                itaque dicta quidem praesentium obcaecati
+
+            </p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <p>
+                Lorem ipsum dsrffvte b v5weygvd 55ev whgb retr 465b sd ftt5wr dolor sit, amet consectetur adipisicing
+                elit. Eos eligendi reprehenderit illo maiores voluptatem! Quo quaerat tenetur quod expedita molestias
+                facilis nulla. Ducimus accusantium assumenda velit sit soluta libero quam mollitia facere earum! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Mollitia doloribus ipsa iure tempora facilis dolorem?
+                Veniam animi, provident recusandae cupiditate aut, reiciendis ad asperiores, maxime quaerat explicabo
+                culpa repellendus hic?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam dolorem
+                earum harum velit non possimus deserunt sit dignissimos, quas natus id
+                veniam cumque? Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Rerum, non molestias consectetur dolore incidunt hic labore molestiae
+                deserunt consequuntur minus perferendis temporibus tempora atque ea maiores dignissimos asperiores vero
+                dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla fugit eaque corrupti eligendi,
+                officiis adipisci. Suscipit doloremque libero necessitatibus eius id iste animi nihil praesentium,
+                voluptate rem pariatur, magni commodi.</p>
+        </div>
+    </div>
+    <div class="bg">
+        <img src="./images/unity.jpg" alt="">
+    </div>
+    <h3>LOVE YOU 3000</h3>
+
+    <h5> Spokespersons</h5>
+
+    <div class="bg-main">
+        <div class="bg-1">
+            <img src="./images/patra.jpg" alt="">
+            <h4>Sambit Patra</h4>
+        </div>
+        <div class="bg-1">
+            <img src="./images/anjanajpg.jpg" alt="">
+            <h4>Anjana </h4>
+        </div>
+        <div class="bg-1">
+            <img src="./images/chaudry.webp" alt="">
+            <h4>Sudhir Chaudri</h4>
+        </div>
+    </div>
+    <div class="logo">
+        <img class="logo-1" src="https://english.cdn.zeenews.com/images/logo/zeenewslogo_nav.png" alt="">
+        <img class="logo-2"
+            src="https://akm-img-a-in.tosshub.com/aajtak/resource/img/bemisaal-20-saal/aajtak-logo-153X116.png" alt="">
+        <img class="logo-3"
+            src="data:image/jpeg;base64,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"
+            alt="">
+    </div>
+</body>
+
+</html>

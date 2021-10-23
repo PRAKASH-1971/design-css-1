@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            background: black;
+            color: blanchedalmond;
+            display: flex;
+            flex-direction: row;
+        }
+
+        ul {
+            display: inline-grid;
+            grid-template-columns: auto auto auto auto auto;
+        }
+
+        ul li {
+            margin-right: 35px;
+            list-style: none;
+            padding: 7px 0px;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 250px 250px 250px;
+            grid-template-rows: 200px 200px 200px;
+            grid-gap: 0px 20px;
+            padding: 20px 17px;
+        }
+        .item{
+            border: 2px solid black;
+        }
+       .container img{
+            width: 250px;
+            height: 200px;
+        }
+
+        body{
+            background-color: rgb(40, 177, 40);
+        }
+
+        @media screen and (max-width:800px){
+            body{
+                background: chocolate;
+            }
+        }
+
+        @media screen and (max-width:600px){
+            body{
+                background: rgb(110, 28, 233);
+            }
+            nav{
+                background: cornsilk;
+                color: black;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img style="padding: 10px 12px;" src="https://english.cdn.zeenews.com/images/logo/zeenewslogo_nav.png" alt="">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+      <div class="item"><img src="./images/anjanajpg.jpg" alt=""></div>
+      <img src="./images/modi.jpg" alt="">
+      <img src="./images/chaudry.webp" alt="">
+
+    </div>
+</body>
+
+</html>
